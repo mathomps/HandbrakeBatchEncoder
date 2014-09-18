@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Handbrake Batch Encoder")]
-[assembly: AssemblyCopyright("Copyright ©  2009-2011 Mark Thompson")]
+[assembly: AssemblyCopyright("Copyright ©  2009-2014 Mark Thompson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
