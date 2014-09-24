@@ -62,7 +62,7 @@ namespace HandbrakeBatchEncoder
         {
             UpdateEncodeQueueList();
 
-            if (_encoderWorker.IsBusy || encodeQueueFiles.Count == 0)
+            if (encoder.IsBusy || encodeQueueFiles.Count == 0)
             {
                 return;
             }
@@ -80,7 +80,8 @@ namespace HandbrakeBatchEncoder
                                };
             //_encoder.SourceFilename = sourceFile;
             //_encoder.DestinationFilename = destinationFile;
-            _encoderWorker.RunWorkerAsync(settings);
+            //_encoderWorker.RunWorkerAsync(settings);
+            encoder.Encode(settings);
 
             //UpdateEncodeQueueList();
 
